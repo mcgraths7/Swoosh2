@@ -250,6 +250,9 @@
                                         <state key="normal" title="Beginner">
                                             <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                         </state>
+                                        <connections>
+                                            <action selector="onBeginnerTapped:" destination="AT6-kQ-542" eventType="touchUpInside" id="4oH-Yk-sIN"/>
+                                        </connections>
                                     </button>
                                     <button opaque="NO" alpha="0.64999997615814209" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="71f-HB-jhX" customClass="BorderButton" customModule="Swoosh2_0" customModuleProvider="target">
                                         <rect key="frame" x="189" y="0.0" width="154" height="50"/>
@@ -261,6 +264,9 @@
                                         <state key="normal" title="Baller">
                                             <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                         </state>
+                                        <connections>
+                                            <action selector="onBallerTapped:" destination="AT6-kQ-542" eventType="touchUpInside" id="95c-QP-h3L"/>
+                                        </connections>
                                     </button>
                                 </subviews>
                             </stackView>
@@ -278,7 +284,7 @@
                                     </label>
                                 </subviews>
                             </stackView>
-                            <button opaque="NO" alpha="0.64999997615814209" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="lFB-gb-mt4" customClass="BorderButton" customModule="Swoosh2_0" customModuleProvider="target">
+                            <button opaque="NO" alpha="0.64999997615814209" contentMode="scaleToFill" enabled="NO" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="lFB-gb-mt4" customClass="BorderButton" customModule="Swoosh2_0" customModuleProvider="target">
                                 <rect key="frame" x="16" y="708" width="343" height="50"/>
                                 <color key="backgroundColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                 <constraints>
@@ -288,6 +294,9 @@
                                 <state key="normal" title="FINISH!">
                                     <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                 </state>
+                                <connections>
+                                    <action selector="onFinishedTapped:" destination="AT6-kQ-542" eventType="touchUpInside" id="3aL-NE-7JI"/>
+                                </connections>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="uPB-Zd-awZ">
                                 <rect key="frame" x="16" y="54" width="30" height="30"/>
@@ -317,6 +326,11 @@
                         </constraints>
                         <viewLayoutGuide key="safeArea" id="yGi-o7-5Rt"/>
                     </view>
+                    <connections>
+                        <outlet property="ballerButton" destination="71f-HB-jhX" id="xVx-YX-w9t"/>
+                        <outlet property="beginnerButton" destination="ee6-3z-nhA" id="9TO-iD-n38"/>
+                        <outlet property="finishButton" destination="lFB-gb-mt4" id="eLh-9Q-AE4"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="mh0-jO-WAQ" userLabel="First Responder" sceneMemberID="firstResponder"/>
                 <exit id="kR5-RT-e9s" userLabel="Exit" sceneMemberID="exit"/>
